@@ -15,6 +15,10 @@
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
+    <link rel="stylesheet" href="/css/app.css">
+    <link href="/css/jquery.dataTables.css" rel="stylesheet">
+    <link href="/css/dataTables.bootstrap.css" rel="stylesheet">
+
 </head>
 <body>
     <div id="app">
@@ -80,9 +84,12 @@
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-    <script src="/js/jquery-3.0.min.js"></script>
+    <script src="/js/app.js"></script>
+    <script type="/js/jquery-3.1.0.min.js"></script>
     <script type="/js/bootstrap.min.js"></script>
+
+    <script src="/js/jquery.dataTables.min.js"></script>
+    <script src="/js/dataTables.bootstrap.min.js"></script>
     @yield('script')
 </body>
 </html>
