@@ -45,7 +45,12 @@
                     <ul class="nav navbar-nav">
                         @if (Auth::check())
                             <li><a href="{{ url('/home') }}">Dashbord</a></li>
-                        @endif                        
+                            <li><a href="{{ route('authors.index') }}">Penulis</a></li>
+                        @endif
+
+                        @role('admin')
+                            <li><a href="{{ route('authors.index') }}"></a></li>
+                        @endrole                        
                     </ul>
 
                     <!-- Right Side Of Navbar -->
